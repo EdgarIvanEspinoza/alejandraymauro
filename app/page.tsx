@@ -2,10 +2,11 @@ import Image from "next/image";
 import CountdownTimer from "./components/CountdownTimer";
 import EventSchedule from "./components/EventSchedule";
 import FloralDecoration from "./components/FloralDecoration";
+import WelcomeForm from "./components/WelcomeForm";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-lavender-light to-white relative overflow-x-hidden">
+    <div className="min-h-screen bg-linear-to-b from-lavender-light to-white relative overflow-x-hidden">
       <FloralDecoration />
       {/* Hero Section */}
       <main className="container mx-auto px-4">
@@ -67,13 +68,9 @@ export default function Home() {
             </h3>
             <CountdownTimer />
           </div>
-          <iframe
-            width="540"
-            height="440"
-            src="https://09220186.sibforms.com/serve/MUIFAC09tO3Mtl9fN0nxGdeSKoWC6m2bV9iHq5RIiHIFkRnnYafpSObmI57gy-nbWPbKBcVKuas3yXYw_XJfpClWjdrBfLISQB1dcDze2cqowJGs97q6uMsSSaCezq-5qLW0282tMd47ToQ_4J4ZdU6iw7HpzqzkonzHkxjPNTtfQ3xdjPCnuizC0-nIlFf_PkIq7shIP_XQgm8jiQ=="
-            allowFullScreen
-            className="block ml-auto mr-auto max-w-full"
-          ></iframe>
+
+          {/* Welcome Form */}
+          <WelcomeForm />
           {/* Schedule Section */}
           <div className="mt-16 w-full mb-12">
             <h3 className="text-3xl text-center text-lavender-dark font-serif mb-8">
