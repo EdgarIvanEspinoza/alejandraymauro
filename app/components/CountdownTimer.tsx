@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-const WEDDING_DATE = new Date('2026-05-22T00:00:00');
+const WEDDING_DATE = new Date("2026-05-22T00:00:00");
 
 interface TimeLeft {
   días: number;
@@ -16,26 +16,26 @@ export default function CountdownTimer() {
     días: 0,
     horas: 0,
     minutos: 0,
-    segundos: 0
+    segundos: 0,
   });
 
   useEffect(() => {
     const calculateTimeLeft = () => {
       const difference = +WEDDING_DATE - +new Date();
-      
+
       if (difference > 0) {
         setTimeLeft({
           días: Math.floor(difference / (1000 * 60 * 60 * 24)),
           horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
           minutos: Math.floor((difference / 1000 / 60) % 60),
-          segundos: Math.floor((difference / 1000) % 60)
+          segundos: Math.floor((difference / 1000) % 60),
         });
       }
     };
 
     // Calcular inmediatamente
     calculateTimeLeft();
-    
+
     // Actualizar cada segundo
     const timer = setInterval(calculateTimeLeft, 1000);
 
@@ -44,7 +44,7 @@ export default function CountdownTimer() {
   }, []);
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6">
+    <div className="w-full max-w-4xl mx-auto p-2">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
         {Object.entries(timeLeft).map(([unit, value]) => (
           <div

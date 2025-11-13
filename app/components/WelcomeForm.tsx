@@ -40,7 +40,7 @@ export default function WelcomeForm() {
   if (success) {
     return (
       <div className="max-w-2xl mx-auto text-center py-16 px-4">
-        <div className="bg-white rounded-xl shadow-lg p-8 border border-lavender/30">
+        <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-lavender/20">
           <div className="text-6xl mb-4">💌</div>
           <h3 className="text-2xl font-bold text-lavender mb-4">
             ¡Gracias por registrarte!
@@ -55,8 +55,8 @@ export default function WelcomeForm() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto py-16 px-4">
-      <div className="bg-white rounded-xl shadow-lg p-8 border border-lavender/30">
+    <div className="max-w-2xl mx-auto py-8 px-4">
+      <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-lavender/20">
         <h3 className="text-3xl font-bold text-lavender mb-4 text-center">
           ¡Nos encantaría contar contigo!
         </h3>

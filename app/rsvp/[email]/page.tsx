@@ -80,7 +80,7 @@ export default function RSVPPage({ params }: RSVPProps) {
           </p>
           <Link
             href="/"
-            className="inline-block bg-gold text-white font-semibold py-2 px-6 rounded hover:bg-gold-dark transition"
+            className="inline-block bg-[#A78BFA] text-white font-semibold py-2 px-6 rounded hover:bg-[#7C3AED] transition"
           >
             Volver al inicio
           </Link>

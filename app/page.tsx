@@ -12,7 +12,7 @@ export default function Home() {
       <main className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center min-h-screen">
           {/* Logo Section */}
-          <div className="relative w-48 h-48 mb-8">
+          <div className="relative w-48 h-48 mb-8 rounded-full bg-white/70 backdrop-blur-sm">
             <Image
               src="/LOGO AM.png"
               alt="Alejandra y Mauro"
@@ -23,11 +23,13 @@ export default function Home() {
           </div>
 
           {/* Names and Date */}
-          <h1 className="text-5xl md:text-7xl font-serif text-lavender-dark text-center mb-4">
-            Alejandra & Mauro
-          </h1>
-          <div className="text-2xl text-gold-dark font-light mb-8">
-            Celebrando Nuestro Amor
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-6 mb-8">
+            <h1 className="text-5xl md:text-7xl font-serif text-lavender-dark text-center mb-4">
+              Alejandra & Mauro
+            </h1>
+            <div className="text-2xl text-gold-dark font-light text-center">
+              Celebrando Nuestro Amor
+            </div>
           </div>
 
           {/* Save the Date */}
@@ -62,20 +64,24 @@ export default function Home() {
           </a>
 
           {/* Countdown Timer */}
-          <div className="mt-12 w-full">
-            <h3 className="text-2xl text-center text-lavender-dark font-serif mb-6">
-              Faltan:
-            </h3>
+          <div className="mt-6 w-full flex flex-col items-center">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 mb-6">
+              <h3 className="text-2xl text-center text-lavender-dark font-serif">
+                Faltan:
+              </h3>
+            </div>
             <CountdownTimer />
           </div>
 
           {/* Welcome Form */}
           <WelcomeForm />
           {/* Schedule Section */}
-          <div className="mt-16 w-full mb-12">
-            <h3 className="text-3xl text-center text-lavender-dark font-serif mb-8">
-              Cronograma
-            </h3>
+          <div className=" w-full mb-12 flex flex-col items-center">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 mb-8">
+              <h3 className="text-3xl text-center text-lavender-dark font-serif">
+                Cronograma
+              </h3>
+            </div>
             <EventSchedule />
           </div>
         </div>
