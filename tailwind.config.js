@@ -23,6 +23,17 @@ module.exports = {
           DEFAULT: '#228B22',
           dark: '#006400',
         },
+        cream: {
+          light: '#FFF5E1',
+          DEFAULT: '#FAEBD7',
+          dark: '#F5DEB3',
+        },
+      },
+      backgroundImage: {
+        'linear-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
+        'linear-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
+        'linear-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+        'linear-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
       },
     },
   },

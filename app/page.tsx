@@ -6,7 +6,7 @@ import WelcomeForm from "./components/WelcomeForm";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-linear-to-b from-lavender-light to-white relative overflow-x-hidden">
+    <div className="min-h-screen bg-cream-gradient relative overflow-x-hidden">
       <FloralDecoration />
       {/* Hero Section */}
       <main className="container mx-auto px-4">

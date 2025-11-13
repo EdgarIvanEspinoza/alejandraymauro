@@ -1,6 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --color-lavender-light: #e6e6fa;
+  --color-lavender: #967bb6;
+  --color-lavender-dark: #7b6b8d;
+
+  --color-gold-light: #ffd700;
+  --color-gold: #daa520;
+  --color-gold-dark: #b8860b;
+
+  --color-forest-light: #90ee90;
+  --color-forest: #228b22;
+  --color-forest-dark: #006400;
+
+  --color-cream-light: #fffbf5;
+  --color-cream: #fff5e1;
+  --color-cream-dark: #faebd7;
+
+  --background-image-cream-gradient: linear-gradient(
+    to bottom,
+    #fffbf5,
+    #fff5e1
+  );
+}
+
 :root {
   --background: #ffffff;
   --foreground: #967bb6;
@@ -12,7 +36,7 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: #fff5e1;
   color: var(--foreground);
 }
 
