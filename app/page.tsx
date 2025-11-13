@@ -30,23 +30,27 @@ export default function Home() {
           </div>
 
           {/* Save the Date */}
-          <a 
+          <a
             href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Alejandra+y+Mauro&dates=20260522T173000/20260523T050000&details=¡Nos+casamos!+Acompáñanos+en+este+día+tan+especial.%0A%0ACeremonia:+17:30+-+Iglesia+Santa+Cristina%0ACóctel:+19:00+-+Casa+de+Burgos%0ABanquete:+20:30+-+Casa+de+Burgos%0AFiesta:+23:00+-+Casa+de+Burgos&location=Iglesia+Santa+Cristina`}
             target="_blank"
             rel="noopener noreferrer"
             className="block transition-transform hover:scale-105"
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-lavender/20 text-center group cursor-pointer hover:bg-white/90">
-              <h2 className="text-3xl text-forest-dark font-serif mb-4 group-hover:text-forest">Reserva la Fecha</h2>
-              <p className="text-xl text-lavender-dark mb-2">22 de Mayo, 2026</p>
+              <h2 className="text-3xl text-forest-dark font-serif mb-4 group-hover:text-forest">
+                Reserva la Fecha
+              </h2>
+              <p className="text-xl text-lavender-dark mb-2">
+                22 de Mayo, 2026
+              </p>
               <p className="text-sm text-gold-dark flex items-center justify-center gap-2">
-                <svg 
-                  className="w-5 h-5" 
-                  fill="none" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth="2" 
-                  viewBox="0 0 24 24" 
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
                   <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -63,9 +67,15 @@ export default function Home() {
             </h3>
             <CountdownTimer />
           </div>
-
+          <iframe
+            width="540"
+            height="440"
+            src="https://09220186.sibforms.com/serve/MUIFAC09tO3Mtl9fN0nxGdeSKoWC6m2bV9iHq5RIiHIFkRnnYafpSObmI57gy-nbWPbKBcVKuas3yXYw_XJfpClWjdrBfLISQB1dcDze2cqowJGs97q6uMsSSaCezq-5qLW0282tMd47ToQ_4J4ZdU6iw7HpzqzkonzHkxjPNTtfQ3xdjPCnuizC0-nIlFf_PkIq7shIP_XQgm8jiQ=="
+            allowFullScreen
+            className="block ml-auto mr-auto max-w-full"
+          ></iframe>
           {/* Schedule Section */}
-          <div className="mt-16 w-full">
+          <div className="mt-16 w-full mb-12">
             <h3 className="text-3xl text-center text-lavender-dark font-serif mb-8">
               Cronograma
             </h3>
