@@ -5,10 +5,15 @@ import FloralDecoration from "./components/FloralDecoration";
 import WelcomeForm from "./components/WelcomeForm";
 import OurStory from "./components/OurStory";
 import DressCode from "./components/DressCode";
+import Navigation from "./components/Navigation";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cream-gradient relative overflow-x-hidden">
+    <div
+      id="inicio"
+      className="min-h-screen bg-cream-gradient relative overflow-x-hidden"
+    >
+      <Navigation />
       <FloralDecoration />
       {/* Hero Section */}
       <main className="container mx-auto px-4">
@@ -80,12 +85,20 @@ export default function Home() {
           </div>
 
           {/* Our Story */}
-          <OurStory />
+          <div id="historia">
+            <OurStory />
+          </div>
 
           {/* Welcome Form */}
-          <WelcomeForm />
+          <div id="confirmar">
+            <WelcomeForm />
+          </div>
+
           {/* Schedule Section */}
-          <div className=" w-full mb-12 flex flex-col items-center">
+          <div
+            id="cronograma"
+            className=" w-full mb-12 flex flex-col items-center"
+          >
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 mb-8">
               <h3 className="text-3xl text-center text-lavender-dark font-bold font-serif">
                 Cronograma
@@ -95,7 +108,9 @@ export default function Home() {
           </div>
 
           {/* Dress Code Section */}
-          <DressCode />
+          <div id="vestimenta">
+            <DressCode />
+          </div>
         </div>
       </main>
     </div>
