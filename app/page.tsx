@@ -4,6 +4,7 @@ import EventSchedule from "./components/EventSchedule";
 import FloralDecoration from "./components/FloralDecoration";
 import WelcomeForm from "./components/WelcomeForm";
 import OurStory from "./components/OurStory";
+import DressCode from "./components/DressCode";
 
 export default function Home() {
   return (
@@ -92,6 +93,9 @@ export default function Home() {
             </div>
             <EventSchedule />
           </div>
+
+          {/* Dress Code Section */}
+          <DressCode />
         </div>
       </main>
     </div>
