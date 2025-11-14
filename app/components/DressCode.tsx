@@ -47,7 +47,6 @@ export default function DressCode() {
   const womenDresses = [
     { color: "Navy", bgColor: "bg-[#1a1f3a]" },
     { color: "Sage", bgColor: "bg-[#9caf88]" },
-    { color: "Lavender", bgColor: "bg-lavender" },
     { color: "Blush", bgColor: "bg-[#ffc0cb]" },
     { color: "Gold", bgColor: "bg-gold" },
     { color: "Burgundy", bgColor: "bg-[#800020]" },
@@ -190,7 +189,8 @@ export default function DressCode() {
             <p className="text-forest-dark">
               <span className="font-semibold">Nota importante:</span> Por favor
               evita usar blanco, marfil o colores muy claros que puedan
-              confundirse con el vestido de la novia. 💜
+              confundirse con el vestido de la novia y derivados del violeta que
+              esta dedicado a la decoración del lugar. 💜
             </p>
           </div>
         </div>

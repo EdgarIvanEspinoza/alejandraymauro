@@ -65,10 +65,7 @@ export default function OurStory() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-serif text-lavender-dark mb-4 tracking-wider">
-            DOS CAMINOS
-          </h2>
-          <h2 className="text-4xl md:text-6xl font-serif text-lavender-dark tracking-wider">
-            UN DESTINO
+            NUESTRA HISTORIA
           </h2>
         </div>
 
