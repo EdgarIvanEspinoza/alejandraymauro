@@ -164,7 +164,7 @@ export default function OurStory() {
                   <div className="text-5xl md:text-6xl font-serif text-center text-lavender-dark mb-3">
                     {chapter.number}
                   </div>
-                  <h3 className="text-xl md:text-2xl font-serif text-lavender-dark mb-4 tracking-wide">
+                  <h3 className="text-xl md:text-2xl font-serif text-center text-lavender-dark mb-4 tracking-wide">
                     {chapter.title}
                   </h3>
                   <p className="text-base md:text-lg text-lavender-dark/80 leading-relaxed">
