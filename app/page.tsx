@@ -40,12 +40,10 @@ export default function Home() {
             className="block transition-transform hover:scale-105"
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-lavender/20 text-center group cursor-pointer hover:bg-white/90">
-              <h2 className="text-3xl text-forest-dark font-serif mb-4 group-hover:text-forest">
+              <h2 className="text-3xl text-lavender-dark font-bold font-serif mb-4 group-hover:text-forest">
                 Reserva la Fecha
               </h2>
-              <p className="text-xl text-lavender-dark mb-2">
-                22 de Mayo, 2026
-              </p>
+              <p className="text-xl text-lavender mb-2">22 de Mayo, 2026</p>
               <p className="text-sm text-gold-dark flex items-center justify-center gap-2">
                 <svg
                   className="w-5 h-5"
@@ -66,7 +64,7 @@ export default function Home() {
           {/* Countdown Timer */}
           <div className="mt-6 w-full flex flex-col items-center">
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 mb-6">
-              <h3 className="text-2xl text-center text-lavender-dark font-serif">
+              <h3 className="text-2xl text-center text-lavender-dark font-bold font-serif">
                 Faltan:
               </h3>
             </div>
@@ -78,7 +76,7 @@ export default function Home() {
           {/* Schedule Section */}
           <div className=" w-full mb-12 flex flex-col items-center">
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 mb-8">
-              <h3 className="text-3xl text-center text-lavender-dark font-serif">
+              <h3 className="text-3xl text-center text-lavender-dark font-bold font-serif">
                 Cronograma
               </h3>
             </div>

@@ -90,7 +90,7 @@ export default function RSVPPage({ params }: RSVPProps) {
   }
 
   return (
-    <main className="min-h-screen bg-linear-to-b from-lavender-light to-white flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden">
+    <main className="min-h-screen bg-cream-gradient flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden">
       <FloralDecoration />
       <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 border border-lavender/30 relative z-10">
         <h1 className="text-3xl font-bold text-lavender mb-4 text-center">
@@ -158,7 +158,7 @@ export default function RSVPPage({ params }: RSVPProps) {
                   ¿Cuántas personas te acompañarán?
                 </label>
                 <div className="flex gap-1 flex-wrap">
-                  {[0, 1, 2, 3].map((num) => (
+                  {[0, 1].map((num) => (
                     <button
                       key={num}
                       type="button"
