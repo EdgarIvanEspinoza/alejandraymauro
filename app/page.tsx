@@ -3,6 +3,7 @@ import CountdownTimer from "./components/CountdownTimer";
 import EventSchedule from "./components/EventSchedule";
 import FloralDecoration from "./components/FloralDecoration";
 import WelcomeForm from "./components/WelcomeForm";
+import OurStory from "./components/OurStory";
 
 export default function Home() {
   return (
@@ -12,12 +13,12 @@ export default function Home() {
       <main className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center min-h-screen">
           {/* Logo Section */}
-          <div className="relative w-48 h-48 mb-8 mt-8 backdrop-blur-sm">
+          <div className="relative w-48 h-48 mb-8 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center p-4">
             <Image
               src="/LOGO_AM_COLOR.png"
               alt="Alejandra y Mauro"
               fill
-              className="object-contain"
+              className="object-contain p-4"
               priority
             />
           </div>
@@ -70,6 +71,9 @@ export default function Home() {
             </div>
             <CountdownTimer />
           </div>
+
+          {/* Our Story */}
+          <OurStory />
 
           {/* Welcome Form */}
           <WelcomeForm />
