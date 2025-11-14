@@ -13,14 +13,21 @@ export default function Home() {
       <main className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center min-h-screen">
           {/* Logo Section */}
-          <div className="relative w-48 h-48 mb-8 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center p-4">
-            <Image
-              src="/LOGO_AM_COLOR.png"
-              alt="Alejandra y Mauro"
-              fill
-              className="object-contain p-4"
-              priority
-            />
+          <div className="relative mb-8 z-0">
+            {/* Glow effect behind logo */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150px] h-[250px]">
+              <div className="w-full h-full rounded-full bg-lavender blur-[100px]"></div>
+              <div className="w-full h-full rounded-full bg-white blur-[60px]"></div>
+            </div>
+            <div className="relative w-48 h-48 flex items-center justify-center p-4 z-10">
+              <Image
+                src="/LOGO_AM_COLOR.png"
+                alt="Alejandra y Mauro"
+                fill
+                className="object-contain p-4"
+                priority
+              />
+            </div>
           </div>
 
           {/* Names and Date */}

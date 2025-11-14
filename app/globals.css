@@ -23,6 +23,13 @@
     #fffbf5,
     #fff5e1
   );
+
+  --background-image-radial: radial-gradient(
+    circle,
+    var(--from) 0%,
+    var(--via) 40%,
+    var(--to) 100%
+  );
 }
 
 :root {
