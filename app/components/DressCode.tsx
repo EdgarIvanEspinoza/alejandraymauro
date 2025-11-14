@@ -37,20 +37,6 @@ export default function DressCode() {
 
     fetchWeather();
   }, []);
-  const menSuits = [
-    { color: "Azul Marino", bgColor: "bg-[#1a1f3a]" },
-    { color: "Gris Carbón", bgColor: "bg-[#36454f]" },
-    { color: "Verde Bosque", bgColor: "bg-forest-dark" },
-    { color: "Burdeos", bgColor: "bg-[#800020]" },
-  ];
-
-  const womenDresses = [
-    { color: "Azul Marino", bgColor: "bg-[#1a1f3a]" },
-    { color: "Verde Salvia", bgColor: "bg-[#9caf88]" },
-    { color: "Rosa Pastel", bgColor: "bg-[#ffc0cb]" },
-    { color: "Dorado", bgColor: "bg-gold" },
-    { color: "Burdeos", bgColor: "bg-[#800020]" },
-  ];
 
   return (
     <section className="w-full mb-12 flex flex-col items-center">
@@ -124,31 +110,24 @@ export default function DressCode() {
           <h5 className="text-2xl font-serif text-lavender-dark mb-4 text-center md:text-left">
             Para Caballeros
           </h5>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="flex-1">
-              <p className="text-forest-dark mb-3">
-                Traje completo con corbata o pajarita. Colores sugeridos:
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {menSuits.map((suit) => (
-                  <div
-                    key={suit.color}
-                    className="flex flex-col items-center gap-2"
-                  >
-                    <div
-                      className={`w-16 h-16 rounded-full ${suit.bgColor} shadow-lg border-2 border-white`}
-                    ></div>
-                    <span className="text-sm text-forest-dark">
-                      {suit.color}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="space-y-4">
+            <p className="text-forest-dark">
+              Traje completo con corbata o pajarita.
+            </p>
+            <a
+              href="https://pin.it/4z5yp8uAN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <span className="text-xl">👔</span>
+              <span className="font-medium">Ver referencias de trajes</span>
+              <span className="text-sm">↗</span>
+            </a>
+            <p className="text-sm text-gold-dark italic">
+              * Zapatos de vestir en cuero negro o marrón
+            </p>
           </div>
-          <p className="text-sm text-gold-dark italic mt-3">
-            * Zapatos de vestir en cuero negro o marrón
-          </p>
         </div>
 
         {/* Women's Section */}
@@ -156,31 +135,22 @@ export default function DressCode() {
           <h5 className="text-2xl font-serif text-lavender-dark mb-4 text-center md:text-left">
             Para Damas
           </h5>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="flex-1">
-              <p className="text-forest-dark mb-3">
-                Vestido largo o midi elegante. Colores sugeridos:
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {womenDresses.map((dress) => (
-                  <div
-                    key={dress.color}
-                    className="flex flex-col items-center gap-2"
-                  >
-                    <div
-                      className={`w-16 h-16 rounded-full ${dress.bgColor} shadow-lg border-2 border-white`}
-                    ></div>
-                    <span className="text-sm text-forest-dark">
-                      {dress.color}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="space-y-4">
+            <p className="text-forest-dark">Vestido largo o midi elegante.</p>
+            <a
+              href="https://pin.it/22DSPYpSy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <span className="text-xl">👗</span>
+              <span className="font-medium">Ver referencias de vestidos</span>
+              <span className="text-sm">↗</span>
+            </a>
+            <p className="text-sm text-gold-dark italic">
+              * Tacones o zapatos elegantes
+            </p>
           </div>
-          <p className="text-sm text-gold-dark italic mt-3">
-            * Tacones o zapatos elegantes
-          </p>
         </div>
 
         {/* Important Notes */}
