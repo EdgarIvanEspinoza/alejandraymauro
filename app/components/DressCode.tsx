@@ -1,6 +1,42 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
+interface WeatherData {
+  temp: number;
+  description: string;
+  icon: string;
+}
+
 export default function DressCode() {
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchWeather = async () => {
+      try {
+        // Fecha de la boda: 22 de mayo de 2026
+        const weddingDate = "2026-05-22";
+        const response = await fetch(
+          `/api/weather?date=${weddingDate}&location=Madrid,ES`
+        );
+        const data = await response.json();
+        setWeather(data);
+      } catch (error) {
+        console.error("Error fetching weather:", error);
+        // Fallback data
+        setWeather({
+          temp: 22,
+          description: "Soleado y agradable",
+          icon: "🌤️",
+        });
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchWeather();
+  }, []);
   const menSuits = [
     { color: "Navy", bgColor: "bg-[#1a1f3a]" },
     { color: "Charcoal", bgColor: "bg-[#36454f]" },
@@ -35,6 +71,53 @@ export default function DressCode() {
           <p className="text-lg text-forest-dark">
             Te invitamos a vestir elegante para celebrar con nosotros
           </p>
+        </div>
+
+        {/* Weather Info */}
+        <div className="bg-gradient-to-r from-lavender/10 via-gold/10 to-lavender/10 rounded-xl p-6 mb-8 border border-lavender/20">
+          {loading ? (
+            <div className="text-center py-4">
+              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-lavender"></div>
+              <p className="text-sm text-forest-dark mt-2">
+                Cargando información del clima...
+              </p>
+            </div>
+          ) : (
+            <>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                <div className="flex items-center gap-3">
+                  <span className="text-4xl">☀️</span>
+                  <div>
+                    <h6 className="text-lg font-serif text-lavender-dark font-semibold">
+                      Clima Esperado
+                    </h6>
+                    <p className="text-sm text-forest-dark">Mayo en Madrid</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-gold-dark">
+                      {weather?.temp || 22}°C
+                    </div>
+                    <div className="text-xs text-forest-dark">Temperatura</div>
+                  </div>
+                  <div className="h-12 w-px bg-lavender/30"></div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-lavender">
+                      {weather?.icon || "🌤️"}
+                    </div>
+                    <div className="text-xs text-forest-dark">
+                      {weather?.description || "Soleado y agradable"}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-center text-sm text-gold-dark mt-4 italic">
+                Recomendamos telas ligeras y considera traer una chaqueta o chal
+                para la noche
+              </p>
+            </>
+          )}
         </div>
 
         {/* Men's Section */}
