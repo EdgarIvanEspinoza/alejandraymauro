@@ -16,7 +16,6 @@ export default function Home() {
           <div className="relative mb-8 z-0">
             {/* Glow effect behind logo */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150px] h-[250px]">
-              <div className="w-full h-full rounded-full bg-lavender blur-[100px]"></div>
               <div className="w-full h-full rounded-full bg-white blur-[60px]"></div>
             </div>
             <div className="relative w-48 h-48 flex items-center justify-center p-4 z-10">
