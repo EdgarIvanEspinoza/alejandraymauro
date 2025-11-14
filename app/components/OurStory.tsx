@@ -82,17 +82,17 @@ export default function OurStory() {
             preserveAspectRatio="xMidYMid slice"
           >
             <path
-              d="M 700 -50 
-                 C 700 80, 650 120, 550 180
-                 C 450 240, 300 280, 300 420
-                 C 300 500, 350 540, 450 600
-                 C 550 660, 700 700, 700 840
-                 C 700 920, 650 960, 550 1020
-                 C 450 1080, 300 1120, 300 1260
-                 C 300 1340, 350 1380, 450 1440
-                 C 550 1500, 700 1540, 700 1680
-                 C 700 1800, 600 1900, 500 2000
-                 C 400 2100, 300 2200, 300 2450"
+              d="M 700 100 
+                 C 700 200, 650 250, 550 310
+                 C 450 370, 300 410, 300 550
+                 C 300 630, 350 670, 450 730
+                 C 550 790, 700 830, 700 970
+                 C 700 1050, 650 1090, 550 1150
+                 C 450 1210, 300 1250, 300 1390
+                 C 300 1470, 350 1510, 450 1570
+                 C 550 1630, 700 1670, 700 1810
+                 C 700 1930, 600 2030, 500 2230
+                 "
               stroke="#d4c5b9"
               strokeWidth="100"
               fill="none"
@@ -115,7 +115,7 @@ export default function OurStory() {
                  C 75 900, 90 1000, 75 1150
                  C 60 1300, 75 1400, 75 1550
                  C 75 1700, 90 1800, 75 1950
-                 C 60 2100, 75 2250, 75 2450"
+                 C 60 2100, 75 2250, 75 2250"
               stroke="#d4c5b9"
               strokeWidth="40"
               fill="none"
@@ -167,7 +167,7 @@ export default function OurStory() {
                   <h3 className="text-xl md:text-2xl font-serif text-center text-lavender-dark mb-4 tracking-wide">
                     {chapter.title}
                   </h3>
-                  <p className="text-base md:text-lg text-lavender-dark/80 leading-relaxed">
+                  <p className="text-base md:text-lg text-center text-lavender-dark/80 leading-relaxed">
                     {chapter.content}
                   </p>
                 </div>
