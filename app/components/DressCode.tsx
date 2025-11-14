@@ -38,18 +38,18 @@ export default function DressCode() {
     fetchWeather();
   }, []);
   const menSuits = [
-    { color: "Navy", bgColor: "bg-[#1a1f3a]" },
-    { color: "Charcoal", bgColor: "bg-[#36454f]" },
-    { color: "Forest", bgColor: "bg-forest-dark" },
-    { color: "Burgundy", bgColor: "bg-[#800020]" },
+    { color: "Azul Marino", bgColor: "bg-[#1a1f3a]" },
+    { color: "Gris Carbón", bgColor: "bg-[#36454f]" },
+    { color: "Verde Bosque", bgColor: "bg-forest-dark" },
+    { color: "Burdeos", bgColor: "bg-[#800020]" },
   ];
 
   const womenDresses = [
-    { color: "Navy", bgColor: "bg-[#1a1f3a]" },
-    { color: "Sage", bgColor: "bg-[#9caf88]" },
-    { color: "Blush", bgColor: "bg-[#ffc0cb]" },
-    { color: "Gold", bgColor: "bg-gold" },
-    { color: "Burgundy", bgColor: "bg-[#800020]" },
+    { color: "Azul Marino", bgColor: "bg-[#1a1f3a]" },
+    { color: "Verde Salvia", bgColor: "bg-[#9caf88]" },
+    { color: "Rosa Pastel", bgColor: "bg-[#ffc0cb]" },
+    { color: "Dorado", bgColor: "bg-gold" },
+    { color: "Burdeos", bgColor: "bg-[#800020]" },
   ];
 
   return (
