@@ -16,6 +16,28 @@ export const metadata: Metadata = {
   title: "Alejandra & Mauro - Boda 22 de Mayo 2026",
   description:
     "Te invitamos a celebrar nuestro amor. Reserva la fecha: 22 de Mayo, 2026",
+  openGraph: {
+    title: "Alejandra & Mauro - Boda 22 de Mayo 2026",
+    description:
+      "Te invitamos a celebrar nuestro amor. Reserva la fecha: 22 de Mayo, 2026",
+    images: [
+      {
+        url: "/history4.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Alejandra, Mauro y Balú",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alejandra & Mauro - Boda 22 de Mayo 2026",
+    description:
+      "Te invitamos a celebrar nuestro amor. Reserva la fecha: 22 de Mayo, 2026",
+    images: ["/history4.jpg"],
+  },
 };
 
 export default function RootLayout({
