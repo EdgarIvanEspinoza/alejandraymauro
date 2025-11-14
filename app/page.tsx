@@ -12,9 +12,9 @@ export default function Home() {
       <main className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center min-h-screen">
           {/* Logo Section */}
-          <div className="relative w-48 h-48 mb-8 rounded-full bg-white/70 backdrop-blur-sm">
+          <div className="relative w-48 h-48 mb-8 mt-8 backdrop-blur-sm">
             <Image
-              src="/LOGO AM.png"
+              src="/LOGO_AM_COLOR.png"
               alt="Alejandra y Mauro"
               fill
               className="object-contain"

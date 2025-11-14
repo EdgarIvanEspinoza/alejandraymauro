@@ -24,9 +24,9 @@ module.exports = {
           dark: '#006400',
         },
         cream: {
-          light: '#FFF5E1',
-          DEFAULT: '#FAEBD7',
-          dark: '#F5DEB3',
+          light: '#fffbf5',
+          DEFAULT: '#fff5e1',
+          dark: '#faebd7',
         },
       },
       backgroundImage: {
