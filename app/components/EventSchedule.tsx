@@ -45,29 +45,74 @@ export default function EventSchedule() {
   return (
     <div className="w-full max-w-4xl mx-auto px-3 md:px-6">
       <div className="relative">
-        <div className="absolute left-4 md:left-1/2 h-full w-px bg-lavender-light"></div>
-        <div className="space-y-8">
+        {/* Vista Mobile */}
+        <div className="md:hidden space-y-6">
+          {events.map((event) => (
+            <div key={event.time} className="flex flex-col items-center">
+              <div className="w-full max-w-sm bg-white/90 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-lavender/20">
+                {/* Imagen del evento */}
+                <div className="relative w-full h-40">
+                  <Image
+                    src={event.image}
+                    alt={`Imagen de ${event.title}`}
+                    fill
+                    className="object-cover"
+                    sizes="100vw"
+                  />
+                </div>
+                {/* Información del evento */}
+                <div className="p-6 text-center">
+                  <div className="text-2xl font-serif text-gold-dark mb-1">
+                    {event.time}
+                  </div>
+                  <h3 className="text-xl text-lavender-dark font-medium mb-3">
+                    {event.title}
+                  </h3>
+                  {event.location && (
+                    <a
+                      href={event.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-forest-dark hover:text-forest transition-colors"
+                    >
+                      <svg
+                        className="w-4 h-4 mr-1"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      </svg>
+                      {event.location}
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Vista Desktop */}
+        <div className="hidden md:block space-y-8">
           {events.map((event, index) => (
             <div
               key={event.time}
-              className={`flex flex-col md:flex-row gap-4 md:gap-8 items-start md:items-center w-full ${
-                index % 2 === 0 ? "md:flex-row-reverse" : ""
+              className={`flex flex-row gap-8 items-center w-full ${
+                index % 2 === 0 ? "flex-row-reverse" : ""
               }`}
             >
-              {/* Círculo en la línea de tiempo */}
-              <div className="relative ml-2 md:ml-0 mt-2 md:mt-0"></div>
-
               {/* Contenido del evento */}
-              <div
-                className="flex-1 bg-white/90 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-lavender/20 
-                            w-[calc(100%-2rem)] md:w-auto relative"
-              >
+              <div className="flex-1 bg-white/90 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-lavender/20 relative">
                 {/* Contenedor flex para imagen y texto */}
-                <div className="flex flex-col md:flex-row md:h-[150px]">
+                <div className="flex flex-row h-[150px]">
                   {/* Imagen del evento */}
                   <div
-                    className={`relative w-full md:w-1/2 h-32 md:h-full shrink-0 ${
-                      index % 2 === 0 ? "md:order-2" : "md:order-1"
+                    className={`relative w-1/2 h-full shrink-0 ${
+                      index % 2 === 0 ? "order-2" : "order-1"
                     }`}
                   >
                     <Image
@@ -75,7 +120,7 @@ export default function EventSchedule() {
                       alt={`Imagen de ${event.title}`}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 60vw"
+                      sizes="60vw"
                     />
                     <div
                       className={`absolute inset-0 ${
@@ -85,13 +130,12 @@ export default function EventSchedule() {
                       }`}
                     ></div>
                   </div>
-
                   {/* Información del evento */}
                   <div
-                    className={`md:w-1/2 p-5 md:p-8 flex flex-col justify-center ${
+                    className={`w-1/2 p-8 flex flex-col justify-center ${
                       index % 2 === 0
-                        ? "md:order-1 md:text-right"
-                        : "md:order-2 md:text-left"
+                        ? "order-1 text-right"
+                        : "order-2 text-left"
                     }`}
                   >
                     <div className="text-2xl font-serif text-gold-dark mb-1">
@@ -106,7 +150,7 @@ export default function EventSchedule() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`inline-flex items-center text-forest-dark hover:text-forest transition-colors ${
-                          index % 2 === 0 ? "md:ml-auto" : ""
+                          index % 2 === 0 ? "ml-auto" : ""
                         }`}
                       >
                         <svg

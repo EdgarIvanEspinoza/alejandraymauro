@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Tangerine:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @theme {
+  --font-family-carattere: "Tangerine", cursive;
+
   --color-lavender-light: #e6e6fa;
   --color-lavender: #967bb6;
   --color-lavender-dark: #7b6b8d;
@@ -52,6 +54,11 @@ h2,
 h3,
 .font-serif {
   font-family: "Cormorant Garamond", serif;
+}
+
+.font-carattere {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
 }
 
 .animate-bounce {

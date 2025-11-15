@@ -37,7 +37,7 @@ export default function Home() {
 
           {/* Names and Date */}
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-6 mb-8">
-            <h1 className="text-5xl md:text-7xl font-serif text-lavender-dark text-center mb-4">
+            <h1 className="text-6xl md:text-8xl font-carattere text-lavender-dark text-center mb-4">
               Alejandra & Mauro
             </h1>
             <div className="text-2xl text-gold-dark font-light text-center">

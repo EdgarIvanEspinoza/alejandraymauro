@@ -29,6 +29,9 @@ module.exports = {
           dark: '#faebd7',
         },
       },
+      fontFamily: {
+        carattere: ['var(--font-carattere)'],
+      },
       backgroundImage: {
         'linear-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
         'linear-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',

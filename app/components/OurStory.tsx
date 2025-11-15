@@ -52,18 +52,11 @@ export default function OurStory() {
   ];
 
   return (
-    <div className="w-full mb-12 flex flex-col items-center">
-      {/* Title Section */}
-      <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 mb-8">
-        <h3 className="text-3xl text-center text-lavender-dark font-bold font-serif">
-          Nuestra Historia
-        </h3>
-      </div>
-
+    <div className="w-full mb-12 mt-8 flex flex-col items-center">
       {/* Main Card Container */}
       <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 max-w-6xl w-full shadow-xl border border-lavender/20">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 relative z-10">
           <h2 className="text-4xl md:text-6xl font-serif text-lavender-dark mb-4 tracking-wider">
             NUESTRA HISTORIA
           </h2>
@@ -88,7 +81,7 @@ export default function OurStory() {
                  C 450 1210, 300 1250, 300 1390
                  C 300 1470, 350 1510, 450 1570
                  C 550 1630, 700 1670, 700 1810
-                 C 700 1930, 600 2030, 500 2230
+                 C 700 1930, 600 2030, 500 2100
                  "
               stroke="#d4c5b9"
               strokeWidth="100"
@@ -173,11 +166,11 @@ export default function OurStory() {
           </div>
 
           {/* Closing message */}
-          <div className="mt-24 text-center max-w-3xl mx-auto">
-            <p className="text-base md:text-lg text-lavender-dark leading-relaxed font-serif">
-              Ese fue el comienzo de nuestro &ldquo;para siempre&rdquo;. Y hoy
+          <div className="relative mt-24 text-center max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-center text-lavender-dark/80 leading-relaxed">
+              Ese fue el comienzo de nuestro &ldquo;para siempre&rdquo;, y hoy
               queremos celebrarlo con quienes han sido parte de esta historia y
-              de nuestras vidas, que uuunas vidas.
+              de nuestras vidas.
             </p>
           </div>
         </div>
