@@ -6,6 +6,7 @@ import WelcomeForm from "./components/WelcomeForm";
 import OurStory from "./components/OurStory";
 import DressCode from "./components/DressCode";
 import Navigation from "./components/Navigation";
+import { Regalos } from "./components/Regalos";
 
 export default function Home() {
   return (
@@ -110,6 +111,9 @@ export default function Home() {
           {/* Dress Code Section */}
           <div id="vestimenta">
             <DressCode />
+          </div>
+          <div id="regalos">
+            <Regalos />
           </div>
         </div>
       </main>

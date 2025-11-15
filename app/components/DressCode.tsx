@@ -58,6 +58,49 @@ export default function DressCode() {
           </p>
         </div>
 
+        <div>
+          {/* Men's Section */}
+          <div className="mb-10 text-center">
+            <h5 className="text-2xl font-serif text-lavender-dark mb-4 text-center ">
+              Para Caballeros
+            </h5>
+            <div className="space-y-4">
+              <p className="text-forest-dark">
+                Traje completo con corbata o pajarita.
+              </p>
+              <a
+                href="https://pin.it/4z5yp8uAN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <span className="text-xl">👔</span>
+                <span className="font-medium">Ver referencias de trajes</span>
+                <span className="text-sm">↗</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Women's Section */}
+          <div className="mb-8 text-center">
+            <h5 className="text-2xl font-serif text-lavender-dark mb-4 text-center">
+              Para Damas
+            </h5>
+            <div className="space-y-4">
+              <p className="text-forest-dark">Vestido largo o midi elegante.</p>
+              <a
+                href="https://pin.it/22DSPYpSy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <span className="text-xl">👗</span>
+                <span className="font-medium">Ver referencias de vestidos</span>
+                <span className="text-sm">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
         {/* Weather Info */}
         <div className="bg-gradient-to-r from-lavender/10 via-gold/10 to-lavender/10 rounded-xl p-6 mb-8 border border-lavender/20">
           {loading ? (
@@ -103,54 +146,6 @@ export default function DressCode() {
               </p>
             </>
           )}
-        </div>
-
-        {/* Men's Section */}
-        <div className="mb-10">
-          <h5 className="text-2xl font-serif text-lavender-dark mb-4 text-center md:text-left">
-            Para Caballeros
-          </h5>
-          <div className="space-y-4">
-            <p className="text-forest-dark">
-              Traje completo con corbata o pajarita.
-            </p>
-            <a
-              href="https://pin.it/4z5yp8uAN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <span className="text-xl">👔</span>
-              <span className="font-medium">Ver referencias de trajes</span>
-              <span className="text-sm">↗</span>
-            </a>
-            <p className="text-sm text-gold-dark italic">
-              * Zapatos de vestir en cuero negro o marrón
-            </p>
-          </div>
-        </div>
-
-        {/* Women's Section */}
-        <div className="mb-8">
-          <h5 className="text-2xl font-serif text-lavender-dark mb-4 text-center md:text-left">
-            Para Damas
-          </h5>
-          <div className="space-y-4">
-            <p className="text-forest-dark">Vestido largo o midi elegante.</p>
-            <a
-              href="https://pin.it/22DSPYpSy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <span className="text-xl">👗</span>
-              <span className="font-medium">Ver referencias de vestidos</span>
-              <span className="text-sm">↗</span>
-            </a>
-            <p className="text-sm text-gold-dark italic">
-              * Tacones o zapatos elegantes
-            </p>
-          </div>
         </div>
 
         {/* Important Notes */}

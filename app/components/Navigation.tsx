@@ -21,6 +21,7 @@ export default function Navigation() {
     { label: "RSVP", href: "#confirmar" },
     { label: "Cronograma", href: "#cronograma" },
     { label: "Vestimenta", href: "#vestimenta" },
+    { label: "Regalos", href: "#regalos" },
   ];
 
   const scrollToSection = (href: string) => {
