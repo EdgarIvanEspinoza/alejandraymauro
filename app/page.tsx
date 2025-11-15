@@ -115,6 +115,27 @@ export default function Home() {
           <div id="regalos">
             <Regalos />
           </div>
+
+          {/* Footer */}
+          <footer className="w-full mt-16 mb-8">
+            <div className="max-w-4xl mx-auto text-center space-y-2">
+              <div className="text-lavender-dark text-sm">
+                © {new Date().getFullYear()} Alejandra & Mauro. Todos los
+                derechos reservados.
+              </div>
+              <div className="text-forest-dark text-xs">
+                Desarrollado con 💜 por{" "}
+                <a
+                  href="https://www.linkedin.com/in/edgarivanespinoza/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lavender hover:text-lavender-dark transition-colors underline"
+                >
+                  Ivan Espinoza
+                </a>
+              </div>
+            </div>
+          </footer>
         </div>
       </main>
     </div>
