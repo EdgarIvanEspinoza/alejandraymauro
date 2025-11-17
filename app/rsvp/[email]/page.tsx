@@ -96,10 +96,13 @@ export default function RSVPPage({ params }: RSVPProps) {
         <h1 className="text-3xl font-bold text-lavender mb-4 text-center">
           Confirmar asistencia
         </h1>
-        <p className="mb-6 text-center text-gray-700">
+        <p className="mb-2 text-center text-gray-700">
           Hola <span className="font-semibold text-gold-dark">{email}</span>,
           <br />
           Por favor confirma tu asistencia a nuestra boda
+        </p>
+        <p className="mb-6 text-center text-sm text-gold-dark italic">
+          Confirmaciones hasta el 1 de marzo de 2026
         </p>
 
         {error && (

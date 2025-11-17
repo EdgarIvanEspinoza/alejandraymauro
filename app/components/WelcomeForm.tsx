@@ -60,7 +60,7 @@ export default function WelcomeForm() {
         <h3 className="text-3xl font-bold text-lavender mb-4 text-center">
           ¡Nos encantaría contar contigo!
         </h3>
-        <p className="text-gray-700 mb-6 text-center">
+        <p className="text-gray-700 mb-2 text-center">
           Ingresa tu correo para recibir toda la información sobre nuestra boda
           y confirmar tu asistencia.
         </p>
@@ -91,6 +91,9 @@ export default function WelcomeForm() {
             {loading ? "Enviando..." : "Recibir invitación"}
           </button>
         </form>
+        <p className="text-sm text-lavender italic mt-4 text-center">
+          Confirmaciones hasta el 1 de marzo de 2026
+        </p>
       </div>
     </div>
   );
