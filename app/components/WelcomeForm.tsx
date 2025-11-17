@@ -92,7 +92,8 @@ export default function WelcomeForm() {
           </button>
         </form>
         <p className="text-sm text-lavender italic mt-4 text-center">
-          Confirmaciones hasta el 1 de marzo de 2026
+          Confirma tu asistencia antes de
+          <br /> 1 de marzo de 2026
         </p>
       </div>
     </div>
