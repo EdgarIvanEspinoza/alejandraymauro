@@ -93,7 +93,7 @@ export default function WelcomeForm() {
         </form>
         <p className="text-sm text-lavender italic mt-4 text-center">
           Confirma tu asistencia antes de
-          <br /> 1 de marzo de 2026
+          <br /> 1 de Marzo de 2026
         </p>
       </div>
     </div>
