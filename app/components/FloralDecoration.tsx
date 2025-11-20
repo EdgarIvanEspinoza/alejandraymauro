@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function FloralDecoration() {
   return (
@@ -11,10 +11,11 @@ export default function FloralDecoration() {
           <Image
             src="/flower-background.webp"
             alt="Decoración floral"
+            fetchPriority="high"
             fill
-            style={{ 
-              objectFit: 'contain',
-              objectPosition: 'bottom center'
+            style={{
+              objectFit: "contain",
+              objectPosition: "bottom center",
             }}
             className="opacity-75"
             priority
@@ -23,15 +24,16 @@ export default function FloralDecoration() {
       </div>
 
       {/* Decoración Izquierda (Desktop/Tablet) */}
-      <div className="hidden md:block fixed left-[-8rem] bottom-0 h-screen w-[40rem] pointer-events-none">
+      <div className="hidden md:block fixed -left-32 bottom-0 h-screen w-160 pointer-events-none">
         <div className="absolute inset-0">
           <Image
             src="/flower-background.webp"
             alt="Decoración floral"
+            fetchPriority="high"
             fill
-            style={{ 
-              objectFit: 'contain',
-              objectPosition: 'bottom left'
+            style={{
+              objectFit: "contain",
+              objectPosition: "bottom left",
             }}
             className="opacity-90 scale-x-100"
             priority
@@ -40,15 +42,16 @@ export default function FloralDecoration() {
       </div>
 
       {/* Decoración Derecha (Desktop/Tablet) */}
-      <div className="hidden md:block fixed right-[-8rem] bottom-0 h-screen w-[40rem] pointer-events-none">
+      <div className="hidden md:block fixed -right-32 bottom-0 h-screen w-160 pointer-events-none">
         <div className="absolute inset-0">
           <Image
             src="/flower-background.webp"
             alt="Decoración floral"
+            fetchPriority="high"
             fill
-            style={{ 
-              objectFit: 'contain',
-              objectPosition: 'bottom right'
+            style={{
+              objectFit: "contain",
+              objectPosition: "bottom right",
             }}
             className="opacity-90 scale-x-[-1]"
             priority
