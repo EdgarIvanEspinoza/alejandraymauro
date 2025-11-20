@@ -45,12 +45,14 @@ export const Regalos = () => {
                 </span>
                 <div className="relative mx-auto w-full max-w-md">
                   <input
-                    className="font-medium text-lavender-dark text-bold p-3 pr-12 border border-lavender/30 rounded text-center w-full bg-gray-100 text-sm md:text-base"
+                    className="font-semibold text-gray-700 p-3 pr-12 border border-lavender/40 rounded text-center w-full bg-white text-sm md:text-base"
                     value={"ES82 1465 0100 96 1764450134"}
+                    aria-label="Account number"
                     readOnly
                   />
                   <button
                     onClick={handleCopy}
+                    aria-label="Copy account number"
                     className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-lavender-dark hover:text-lavender transition-colors"
                   >
                     {copied ? (

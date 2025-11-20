@@ -86,7 +86,7 @@ export default function WelcomeForm() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-white border-2 border-lavender text-lavender font-bold py-3 px-8 rounded-lg hover:bg-[#A78BFA] hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg transform hover:scale-[1.02]"
+            className="bg-lavender border-2 border-lavender text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-lavender-dark hover:border-lavender transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg transform hover:scale-[1.02]"
           >
             {loading ? "Enviando..." : "Recibir invitación"}
           </button>
