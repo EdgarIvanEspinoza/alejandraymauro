@@ -17,7 +17,7 @@ export const Regalos = () => {
   };
 
   return (
-    <section className="w-full mb-12 flex flex-col items-center">
+    <section className="w-full md:mb-12 sm:mb-8 flex flex-col items-center">
       {/* Title */}
       <div className="bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 mb-8">
         <h3 className="text-3xl text-center text-lavender-dark font-bold font-serif">

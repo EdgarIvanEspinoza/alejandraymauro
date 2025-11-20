@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           {/* Footer */}
-          <footer className="w-full mt-16 mb-8">
+          <footer className="w-full mt-16 mb-8 z-1">
             <div className="max-w-4xl mx-auto text-center space-y-2">
               <div className="text-lavender-dark text-sm">
                 © {new Date().getFullYear()} Alejandra & Mauro. Todos los

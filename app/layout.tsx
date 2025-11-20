@@ -19,6 +19,9 @@ const carattere = Carattere({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  ),
   title: "Alejandra & Mauro - Boda 22 de Mayo 2026",
   description:
     "Te invitamos a celebrar nuestro amor. Reserva la fecha: 22 de Mayo, 2026",
