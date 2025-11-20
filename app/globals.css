@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Tangerine:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-family-carattere: "Tangerine", cursive;
-
   --color-lavender-light: #e6e6fa;
   --color-lavender: #967bb6;
   --color-lavender-dark: #7b6b8d;
@@ -39,8 +36,15 @@
   --foreground: #967bb6;
 }
 
+/* Ensure Next.js font variables are available globally */
+body {
+  --font-inter: var(--font-inter);
+  --font-cormorant: var(--font-cormorant);
+  --font-tangerine: var(--font-tangerine);
+}
+
 html {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter, "Inter", system-ui, -apple-system, sans-serif);
   scroll-behavior: smooth;
 }
 
@@ -53,11 +57,11 @@ h1,
 h2,
 h3,
 .font-serif {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-cormorant, "Cormorant Garamond", Georgia, serif);
 }
 
 .font-carattere {
-  font-family: "Tangerine", cursive;
+  font-family: var(--font-tangerine, "Tangerine", cursive);
   font-weight: 700;
 }
 

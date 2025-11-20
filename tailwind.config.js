@@ -30,7 +30,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        carattere: ['var(--font-carattere)'],
+        carattere: ['var(--font-tangerine)', 'cursive'],
       },
       backgroundImage: {
         'linear-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',

@@ -8,6 +8,18 @@ const nextConfig: NextConfig = {
     // Resolve to this config's directory (the project root with package.json)
     root: path.resolve(__dirname),
   },
+  // Optimize external resources
+  experimental: {
+    optimizeCss: true,
+  },
+  // Enable compression and optimizations
+  compress: true,
+  // Optimize production bundle
+  productionBrowserSourceMaps: false,
+  // Optimize images
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
 };
 
 export default nextConfig;
