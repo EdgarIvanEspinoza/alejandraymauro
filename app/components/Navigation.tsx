@@ -18,9 +18,8 @@ export default function Navigation() {
   const navItems = [
     { label: "Inicio", href: "#inicio" },
     { label: "Nuestra Historia", href: "#historia" },
-    { label: "RSVP", href: "#confirmar" },
-    { label: "Cronograma", href: "#cronograma" },
-    { label: "Vestimenta", href: "#vestimenta" },
+    { label: "Fotos", href: "#fotos" },
+    { label: "Nuestro Dia", href: "#cronograma" },
     { label: "Regalos", href: "#regalos" },
   ];
 

@@ -29,10 +29,9 @@ export const Regalos = () => {
         {/* Dress Code Type */}
         <div className="text-center mb-8">
           <p className="text-lg text-lavender-dark">
-            Tu presencia en nuestra boda es nuestro mayor regalo. Si deseas
-            hacernos un obsequio adicional, te agradeceremos considerar una
-            contribución a nuestra luna de miel, la cual atesoraremos con mucho
-            cariño.
+            Su presencia en nuestra boda fue nuestro mayor regalo. Si desean
+            hacernos un obsequio adicional, agradeceremos una contribucion para
+            nuestra luna de miel, que atesoraremos con muchisimo carino.
           </p>
         </div>
 
@@ -90,9 +89,9 @@ export const Regalos = () => {
               <div className="border-t border-lavender/30 pt-6 mt-6">
                 <div className="bg-cream/50 rounded-xl p-4 text-center">
                   <p className="text-forest-dark text-sm md:text-base">
-                    <span className="font-semibold">Nota importante:</span> Si
-                    prefieres, puedes darnos un <strong>sobre</strong> el día de
-                    la boda
+                    <span className="font-semibold">Nota importante:</span>
+                    Gracias por cada detalle y por acompanarnos en este momento
+                    tan especial.
                   </p>
                 </div>
               </div>

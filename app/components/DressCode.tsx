@@ -18,7 +18,7 @@ export default function DressCode() {
         // Fecha de la boda: 22 de mayo de 2026
         const weddingDate = "2026-05-22";
         const response = await fetch(
-          `/api/weather?date=${weddingDate}&location=Madrid,ES`
+          `/api/weather?date=${weddingDate}&location=Madrid,ES`,
         );
         const data = await response.json();
         setWeather(data);
@@ -54,7 +54,7 @@ export default function DressCode() {
             Formal
           </h4>
           <p className="text-lg text-forest-dark">
-            Te invitamos a vestir elegante para celebrar con nosotros
+            Así vivimos el estilo de nuestro gran día
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export default function DressCode() {
                 href="https://pin.it/4z5yp8uAN"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <span className="text-xl">👔</span>
                 <span className="font-medium">Ver referencias de trajes</span>
@@ -92,7 +92,7 @@ export default function DressCode() {
                 href="https://pin.it/22DSPYpSy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-lavender to-lavender-dark text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <span className="text-xl">👗</span>
                 <span className="font-medium">Ver referencias de vestidos</span>
@@ -102,7 +102,7 @@ export default function DressCode() {
           </div>
         </div>
         {/* Weather Info */}
-        <div className="bg-gradient-to-r from-lavender/10 via-gold/10 to-lavender/10 rounded-xl p-6 mb-8 border border-lavender/20">
+        <div className="bg-linear-to-r from-lavender/10 via-gold/10 to-lavender/10 rounded-xl p-6 mb-8 border border-lavender/20">
           {loading ? (
             <div className="text-center py-4">
               <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-lavender"></div>
@@ -117,7 +117,7 @@ export default function DressCode() {
                   <span className="text-4xl">☀️</span>
                   <div>
                     <h6 className="text-lg font-serif text-lavender-dark font-semibold">
-                      Clima Esperado
+                      Clima del Día
                     </h6>
                     <p className="text-sm text-forest-dark">Mayo en Madrid</p>
                   </div>
@@ -141,8 +141,8 @@ export default function DressCode() {
                 </div>
               </div>
               <p className="text-center text-sm text-gold-dark mt-4 italic">
-                Recomendamos telas ligeras y considera traer una chaqueta o chal
-                para la noche
+                Gracias por vestir con tanto cariño y hacer este día aún más
+                especial
               </p>
             </>
           )}

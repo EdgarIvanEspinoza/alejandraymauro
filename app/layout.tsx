@@ -41,15 +41,15 @@ const tangerine = Tangerine({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
-  title: "Alejandra & Mauro - Boda 22 de Mayo 2026",
+  title: "Alejandra & Mauro - Gracias por acompanarnos",
   description:
-    "Te invitamos a celebrar nuestro amor. Reserva la fecha: 22 de Mayo, 2026",
+    "Nos casamos el 22 de Mayo de 2026. Gracias por ser parte de nuestra historia.",
   openGraph: {
-    title: "Alejandra & Mauro - Boda 22 de Mayo 2026",
+    title: "Alejandra & Mauro - Gracias por acompanarnos",
     description:
-      "Te invitamos a celebrar nuestro amor. Reserva la fecha: 22 de Mayo, 2026",
+      "Nos casamos el 22 de Mayo de 2026. Gracias por ser parte de nuestra historia.",
     images: [
       {
         url: "/history4.jpg",
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alejandra & Mauro - Boda 22 de Mayo 2026",
+    title: "Alejandra & Mauro - Gracias por acompanarnos",
     description:
-      "Te invitamos a celebrar nuestro amor. Reserva la fecha: 22 de Mayo, 2026",
+      "Nos casamos el 22 de Mayo de 2026. Gracias por ser parte de nuestra historia.",
     images: ["/history4.jpg"],
   },
 };

@@ -168,9 +168,9 @@ export default function OurStory() {
           {/* Closing message */}
           <div className="relative mt-24 text-center max-w-3xl mx-auto">
             <p className="text-base md:text-lg text-center text-lavender-dark/80 leading-relaxed">
-              Ese fue el comienzo de nuestro &ldquo;para siempre&rdquo;, y hoy
-              queremos celebrarlo con quienes han sido parte de esta historia y
-              de nuestras vidas.
+              Ese fue el comienzo de nuestro &ldquo;para siempre&rdquo;. Gracias
+              por acompanarnos, por celebrar con nosotros y por ser parte de
+              esta historia.
             </p>
           </div>
         </div>
