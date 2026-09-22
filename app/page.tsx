@@ -4,6 +4,8 @@ import FloralDecoration from "./components/FloralDecoration";
 import OurStory from "./components/OurStory";
 import Navigation from "./components/Navigation";
 import { Regalos } from "./components/Regalos";
+import GalleryInvite from "./components/GalleryInvite";
+import WeddingVideo from "./components/WeddingVideo";
 
 export default function Home() {
   return (
@@ -54,18 +56,9 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Photos Notice */}
-          <div
-            id="fotos"
-            className="mt-6 bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-lavender/20 text-center max-w-2xl"
-          >
-            <h3 className="text-2xl text-lavender-dark font-bold font-serif mb-2">
-              Fotos de nuestra boda
-            </h3>
-            <p className="text-lavender-dark/90">
-              Las fotos seran publicadas en esta pagina una vez las tengamos.
-            </p>
-          </div>
+          <GalleryInvite />
+
+          <WeddingVideo />
 
           {/* Our Story */}
           <div id="historia">

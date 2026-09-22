@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -19,6 +21,7 @@ export default function Navigation() {
     { label: "Inicio", href: "#inicio" },
     { label: "Nuestra Historia", href: "#historia" },
     { label: "Fotos", href: "#fotos" },
+    { label: "Video", href: "#video" },
     { label: "Nuestro Dia", href: "#cronograma" },
     { label: "Regalos", href: "#regalos" },
   ];
@@ -26,8 +29,17 @@ export default function Navigation() {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      const navigationOffset = 80;
+      const targetPosition =
+        element.getBoundingClientRect().top + window.scrollY - navigationOffset;
+
+      window.scrollTo({
+        top: Math.max(0, targetPosition),
+        behavior: "smooth",
+      });
       setIsMobileMenuOpen(false);
+    } else if (pathname !== "/") {
+      window.location.href = `/${href}`;
     }
   };
 
