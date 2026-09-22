@@ -1,9 +1,9 @@
 import LocalPhotoGallery from "../../components/LocalPhotoGallery";
-import { getLocalMediaFiles } from "@/lib/local-media";
+import { localMedia } from "@/lib/generated-media";
 
-export default async function DisposableCameraGalleryPage() {
-  const cameraOneFiles = await getLocalMediaFiles("camara-desechable/CAM1");
-  const cameraTwoFiles = await getLocalMediaFiles("camara-desechable/CAM2");
+export default function DisposableCameraGalleryPage() {
+  const cameraOneFiles = localMedia.cam1;
+  const cameraTwoFiles = localMedia.cam2;
 
   return (
     <LocalPhotoGallery

@@ -1,8 +1,8 @@
 import LocalPhotoGallery from "../../components/LocalPhotoGallery";
-import { getLocalMediaFiles } from "@/lib/local-media";
+import { localMedia } from "@/lib/generated-media";
 
-export default async function MagnetsGalleryPage() {
-  const files = await getLocalMediaFiles("imanes");
+export default function MagnetsGalleryPage() {
+  const files = localMedia.imanes;
 
   return (
     <LocalPhotoGallery

@@ -5,11 +5,11 @@ import FloralDecoration from "./FloralDecoration";
 type LocalPhotoGalleryProps = {
   title: string;
   folder: string;
-  files: string[];
+  files: readonly string[];
   collections?: {
     title: string;
     folder: string;
-    files: string[];
+    files: readonly string[];
   }[];
 };
 
